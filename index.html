@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en " class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+   <link rel="stylesheet" href="./output.css">
+   <script src="./matter.js" defer></script>
+   <style>
+    body:has(#about:target) {
+      overflow: auto !important;
+    }
+    body:has(#latest:target) {
+      overflow: auto !important;
+    }
+  </style>
+</head>
+<body class="bg-black overflow-hidden ">
+<section id="slide1" class="flex h-screen flex-col justify-between">
+    <header class="flex items-center justify-between  ml-12 sm:ml-44  ">
+
+        <img class="h-24 w-24" src="images/jlogo.png" alt="">
+
+        <div class="flex items-center gap-10 mr-44">
+            <img class=" w-14 h-8 filter invert hidden" src="images/moon.svg" alt="">
+            <img class=" w-14 h-8 filter invert " src="images/sun.svg" alt="">
+         
+        </div>
+    </header>
+    <div id="wrapper-canvas" class=" absolute inset-0 "></div>
+
+
+          <div class=" min-h-screen">
+        
+            <div class=" flex h-full w-full px-12 sm:px-60">
+              
+      
+              <div class="z-40 relative top-48">
+                <h1 class=" text-white md:text-6xl text-4xl font-serif mb-12 ">Jayesh Bisen</h1>
+                <p class="text-white font-serif mb-12">MERN Stack Developer</p>
+                
+
+     <a href="#about">
+             <button class="bg-gradient-to-r from-blue-400 to-blue-700 h-12 px-4 rounded font-extrabold transform transition-transform duration-200 hover:scale-110 ">
+                  About Me  
+               </button>
+              </a>
+              </div>
+           
+             
+              <img src="images/J-logo-img..png" alt="J Logo"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 h-60 sm:h-80 md:h-96 opacity-90 w-60 sm:w-80 md:w-96 pointer-events-none ">
+            </div>
+          </div>
+          
+
+          <div class="absolute top-1/2 right-0 transform -translate-y-1/2 filter invert z-30 ">
+            <ul class="flex flex-col  space-y-6 mr-10">
+              <li>
+                <a href="https://www.linkedin.com/in/jayesh-bisen-3983662b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="images/linkedin.svg" alt="" class="w-8 h-8">
+              </a>
+              </li>
+              <li>
+                <a href="https://wa.me/qr/6WVIMS7WZZVLK1">
+                  <img src="images/whatsapp.svg" alt="" class="w-8 h-8 filter invert">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jay__bisen?igsh=MWFobDdubnhvZDhhbg==">
+                  <img src="images/instagram (1).svg" alt="" class="w-8 h-8">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Jayesh-2105">
+                  <img src="images/github (1).svg" alt="" class="w-8 h-8">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+          <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+           
+        
+          <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-40">
+            <a href="#latest">
+              <button class="bg-gradient-to-r from-blue-700 to-blue-500 h-12 px-6 rounded font-extrabold transform transition-transform duration-200 hover:scale-110">
+                Latest Works
+              </button>
+            </a>
+          </div>
+        </section>
+
+          
+
+<section id="about" class="bg-black text-white px-12 sm:px-44 pt-20 h-screen w-full z-20 relative">
+    <div class="max-w-4xl mx-auto text-left pt-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8 font-serif -pl-4 text-blue-600 font-sans">About Me</h2>
+      <p class="text-lg md:text-xl leading-relaxed font-light text-blue-300 pb-20">
+        Hello!  I'm <span class="font-semibold text-blue-400">Jayesh Bisen</span> , a second-year engineering student at GHRCE Nagpur with a strong interest in web development and problem-solving. I’m currently building a solid foundation in Data Structures & Algorithms while actively learning full-stack web development. I believe in consistent effort, self-learning, and writing clean, purposeful code. My focus is on creating impactful solutions and continuously improving both my technical and communication skills. I’m always open to challenges that help me grow and refine my craft.
+      </p>
+
+            <div class=" flex border border-solid border-black rounded-3xl h-96 w-[360px] justify-between items-center  p-28 pt-12"> 
+                <div class=" relative flex flex-col items-center gap-12 cursor-pointer group">
+                  <img src="images/mongodb.svg " alt="Mongo db">
+                  <span class="text-green-600 font-bold text-3xl font-serif">M</span>
+                  <div class="text-white absolute  bg-green-600 py-2 px-3 rounded-3xl -top-14 opacity-0 group-hover:top-4 group-hover:opacity-100 transition-all duration-200">mongoDB</div>
+                </div>
+                <div class=" relative flex flex-col items-center gap-12 cursor-pointer group">
+                  <img src="images/express.svg" alt="Express js">
+                  <span class="text-white font-bold text-3xl font-serif">E</span>
+                  <div class="text-black absolute  bg-white py-2 px-3 rounded-3xl -top-14 opacity-0 group-hover:top-4 group-hover:opacity-100 transition-all duration-200">Express.JS</div>
+                </div>
+                <div class="relative flex flex-col items-center gap-12 cursor-pointer group">
+                  <img src="images/react.svg" alt="React">
+                  <span class="font-bold text-3xl text-blue-400 font-serif" >R</span>
+                  <div class="text-black absolute  bg-blue-400 py-2 px-3 rounded-3xl -top-14 opacity-0 group-hover:top-4 group-hover:opacity-100 transition-all duration-200">React.JS</div>
+                </div>
+                 <div class="relative flex flex-col items-center gap-12 cursor-pointer group">
+                  <img src="images/node.svg" alt="Node">
+                  <span class="font-bold text-3xl text-green-300 font-serif">N</span>
+               <div class="text-black absolute bg-green-300 py-2 px-3 rounded-3xl -top-14 opacity-0 group-hover:top-4 group-hover:opacity-100 transition-all duration-200">
+                    Node.JS
+                  </div>
+                </div> 
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest" class="max-w-screen-xl mx-auto px-4 pt-12">
+    <h2 class="text-4xl font-bold w-max mx-auto text-center text-blue-600 border-b-4 border-blue-900 pb-1 pt-12">
+      Latest Projects
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 mt-12">
+  
+     
+      <div class="group relative">
+        <span class="font-bold absolute left-48 -translate-x-1/2 top-12 -translate-y-full opacity-0 
+          group-hover:opacity-100 group-hover:-translate-y-2/3 transition-all duration-200 
+          bg-blue-500 text-black text-lg px-3 py-2 rounded-full w-max z-10 after:hidden sm:after:block after:w-4 
+          after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+      >
+          EazyGrad 🔗
+        </span>
+        <img class="h-72 w-max relative top-32" src="images/eazygrad.webp" alt="EazyGrad Project">
+      </div>
+  
+ 
+      <div class="w-fit md:w-1/2 text-left relative top-36">
+        <h3 class="text-yellow-300 font-bold text-4xl mb-2 ml-28">EazyGrad</h3>
+        <span class="text-blue-400 text-base md:text-lg ml-28 mb-4"
+            >(Edtech Startup)</span
+          >
+        <p class="text-white text-base leading-relaxed ml-28">
+          EazyGrad is a smart academic assistant platform helping students track progress, manage tasks, and get academic support easily. Built with responsive design and intuitive UI.
+        </p>
+        <ul class="flex flex-wrap gap-2 mt-2 ml-28">
+          <li
+            class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+          >
+            #react.js
+          </li>
+          <li class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base" > #express.js</li>
+          <li
+            class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+          >
+            #node.js
+          </li>
+          <li
+            class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+          >
+            #swiper.js
+          </li>
+          <li
+            class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+          >
+            #mongoDB
+          </li>
+          <li
+            class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+          >
+            #mongoose</li>
+          <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"> #css </li>
+          <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base" > #javascript </li>
+          <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"> #figma </li>
+        </ul>
+      </div> 
+    </div> 
+
+<div class="flex flex-col md:flex-row items-start justify-between gap-12 mt-12">
+   <div class="w-fit md:w-1/2 text-left relative top-64 px-12 ">
+    <h3 class="text-yellow-300 font-bold text-4xl mb-2 mr-28">Harigurus</h3>
+    <span class="text-blue-400 text-base md:text-lg mb-4"
+        >(Event Booking)</span
+      >
+    <p class="text-white text-base leading-relaxed ">
+      Easily book spiritual and cultural events with Harigurus. Real-time availability, instant confirmation, and a smooth booking experience — all in one place.
+    </p>
+    <ul class="flex flex-wrap gap-2 mt-2 ">
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #react.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #express.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #node.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #swiper.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+      >
+        #mongoDB
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #mongoose
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+      >
+        #css
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+      >
+        #javascript
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+      >
+        #figma
+      </li>
+    </ul>
+  </div> 
+
+    <div class="group relative">
+      <span class="font-bold absolute right-48 -translate-y-1/2 top-36 -translate-y-full opacity-0 
+        group-hover:opacity-100 group-hover:-translate-x-2/3 transition-all duration-200 
+        bg-blue-500 text-black text-lg px-3 py-2 rounded-full w-max z-10">
+        Harigurus 🔗
+      </span>
+      <img class="h-72 w-max relative top-56" src="images/harigurus.webp" alt="Harigurus">
+</div> 
+</div> 
+
+<div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 mt-12">
+  
+
+  <div class="group relative top-36">
+    <span class="font-bold absolute left-48 -translate-x-1/2 top-20 -translate-y-full opacity-0 
+      group-hover:opacity-100 group-hover:-translate-y-2/3 transition-all duration-200 
+      bg-blue-500 text-black text-lg px-3 py-2 rounded-full w-max z-10">
+      Pioneer 🔗
+    </span>
+    <img class="h-72 w-max relative top-40" src="images/pioneer-digital.webp" alt="Pioneer Project">
+  </div>
+
+
+  <div class="w-fit md:w-1/2 text-left relative top-80">
+    <h3 class="text-yellow-300 font-bold text-4xl mb-2 ml-28">Pioneer</h3>
+    <span class="text-blue-400 text-base md:text-lg ml-28 mb-4"
+        >(digital marketing agency)</span
+      >
+    <p class="text-white text-base leading-relaxed ml-28">
+      Pioneer Digital is a sleek digital marketing website concept designed to boost the online presence of small businesses. It highlights services like SEO and branding, built with responsive UI using Tailwind CSS.
+    </p>
+    <ul class="flex flex-wrap gap-2 mt-2 ml-28">
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #react.js
+      </li>
+      <li class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base" > #express.js</li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #node.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #swiper.js
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"
+      >
+        #mongoDB
+      </li>
+      <li
+        class="border rounded-full border-white px-2 py-1 text-sm text-white md:text-base"
+      >
+        #mongoose</li>
+      <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"> #css </li>
+      <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base" > #javascript </li>
+      <li class="border rounded-full border-white px-2 py-1 text-sm  text-white md:text-base"> #figma </li>
+    </ul>
+  </div> 
+  </div>
+  </div>
+</section>
+
+
+ <div class="h-96"></div>
+ <section class="bg-black py-6 mt-8">
+  <h2 class="text-4xl font-bold w-max mx-auto text-center text-blue-600 border-b-4 border-blue-900 pb-1">
+    Let's Connect
+  </h2>
+
+
+  <div class="mt-10 flex flex-col md:flex-row md:justify-between md:items-start gap-8 px-6">
+    
+ 
+    <div class="md:w-1/2 w-full">
+      <img src="images/contact-me.svg" alt="Contact" class="w-full h-auto" />
+    </div>
+
+
+   <div class="md:w-1/2 w-full">
+      <form name="contact" method="POST" data-netlify="true" action="tthank.html">
+      <input type="hidden" name="form-name" value="contact" /> 
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div class="sm:col-span-6">
+            <label for="username" class="block text-base font-medium text-white">Name </label>
+              <div class="mt-2 pr-12">
+                <input placeholder="Name" type="text" name="username"
+                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 outline-1 outline-gray-300 focus:outline-2 focus:outline-indigo-600" />
+
+                </div>
+            </div> 
+          </div>
+
+          <div class="sm:col-span-6">
+            <label for="email" class="block text-base font-medium text-white mt-6">Email address</label>
+            <div class="mt-2 pr-12">
+              <input id="email" type="email" name="email" placeholder="Email"
+                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 outline-1 outline-gray-300 focus:outline-2 focus:outline-indigo-600" />
+            </div>
+          </div>
+
+          <div class="col-span-full">
+            <label for="about" class="block text-base font-medium text-white mt-6">Message</label>
+            <div class="mt-2 pr-12 ">
+              <textarea id="about" name="about" rows="6" placeholder="Message"
+                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 outline-1 outline-gray-300 focus:outline-2 focus:outline-indigo-600 mb-12"></textarea>
+                <button type="submit" class=" bg-blue-500 h-12 px-56 sm:px-72  rounded font-extrabold transform transition-transform duration-200 hover:scale-105 items-center ">
+                  SUBMIT  
+               </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div> 
+     </div>     
+</section>
+<footer class="bg-black text-white py-8">
+  <div class="container mx-auto flex flex-col items-center space-y-6">
+   
+     <a href="#slide1">
+    <img src="images/jlogo.png" alt="Logo" class="w-20 h-auto">
+  </a>
+   
+    <div class="flex space-x-6">
+      <a href="https://www.linkedin.com/in/jayesh-bisen-3983662b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn" class="w-6 h-6 hover:scale-110 transition-transform duration-200 filter invert">
+      </a>
+      <a href="https://wa.me/qr/6WVIMS7WZZVLK1" target="_blank">
+        <img src="images/whatsapp.svg" alt="WhatsApp" class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+      </a>
+      <a href="https://www.instagram.com/jay__bisen?igsh=MWFobDdubnhvZDhhbg==" target="_blank">
+        <img src="images/instagram (1).svg" alt="Instagram" class="w-6 h-6 hover:scale-110 transition-transform duration-200 filter invert">
+      </a>
+      <a href="https://github.com/Jayesh-2105" target="_blank">
+        <img src="images/github (1).svg" alt="GitHub" class="w-6 h-6 hover:scale-110 transition-transform duration-200 filter invert">
+      </a>
+    </div>
+
+    
+    <p class="text-sm text-gray-400">&copy; 2025 Jayesh Bisen. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

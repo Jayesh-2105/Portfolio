@@ -1,0 +1,6 @@
+dist/output.css
+public/output.css # ya jo bhi path hai
+**/output.css
+dist/output.css
+node_modules
+dist/output.css
